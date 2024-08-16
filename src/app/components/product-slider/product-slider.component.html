@@ -1,0 +1,9 @@
+<swiper-container
+  slides-per-view="2.2"
+  grid-rows="1"
+  mousewheel-force-to-axis="true"
+>
+  <swiper-slide *ngFor="let product of products">
+    <app-product-card [product]="product"></app-product-card>
+  </swiper-slide>
+</swiper-container>

@@ -1,0 +1,13 @@
+<ion-card>
+  <ion-card-content class="ion-flex">
+    <img [src]="product.imageUrl" />
+    <ion-label>
+      <p>{{ product.price | currency }}</p>
+      <ion-icon
+        [color]="product.liked ? 'danger' : 'primary'"
+        [name]="product.liked ? 'heart' : 'heart-outline'"
+      ></ion-icon>
+    </ion-label>
+    <h2 class="ion-text-center">{{ product.name | titlecase }}</h2>
+  </ion-card-content>
+</ion-card>
